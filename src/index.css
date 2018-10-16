@@ -1,5 +1,28 @@
+/* custom */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.track-cover {
+  height: 80px;
+}
+
+.playlist-cover {
+  padding: 1rem;
+  background-size: cover;
+}
+
+.ui.avatar.image {
+  border-radius: 0 !important;
+}
+
+.item {
+  padding: 0 !important;
+}
+
+/* semantic */
+.ui.divided.relaxed.list {
+  margin: 0 !important;
 }
