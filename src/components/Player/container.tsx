@@ -14,10 +14,22 @@ interface IProps {
   forward: Function;
   backward: Function;
   isPlaying: Boolean;
+  currentTrack: number;
+  playlistLength: number;
 }
 
 class Player extends React.Component<IProps> {
   private audio = React.createRef<HTMLAudioElement>();
+
+  componentDidMount() {
+    const node = this.audio.current;
+
+    if (node) {
+      node.onended = () => {
+        this.props.forward();
+      }
+    }
+  }
 
   componentDidUpdate(nextProps: IProps) {
     const node = this.audio.current;
@@ -71,7 +83,9 @@ class Player extends React.Component<IProps> {
 
 const mapStateToProps = (state: IApplicationState) => ({
   track: state.playlists[0].tracks[state.player.currentTrack], //FIXME
-  isPlaying: state.player.isPlaying
+  isPlaying: state.player.isPlaying,
+  currentTrack: state.player.currentTrack,
+  playlistLength: state.playlists[0].tracks.length - 1, //FIXME
 });
 
 const mapDispatchToProps = {

@@ -1,5 +1,5 @@
 export interface ITrack {
-  id: string; 
+  id: string;
   title: string;
   artist: string;
   coverUrl: string;
@@ -10,5 +10,6 @@ export interface IPlaylist {
   year: number;
   title: string;
   tracks: ITrack[];
+  coverUrl: string;
 }
 

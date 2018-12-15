@@ -6,6 +6,8 @@ interface IProps {
   audio: any; // FIXME
   track: ITrack,
   isPlaying: Boolean;
+  currentTrack: number;
+  playlistLength: number;
   handlePlay: VoidFunction;
   handlePause: VoidFunction;
   handleForward: VoidFunction;
@@ -17,6 +19,8 @@ const Player = (
     audio,
     track,
     isPlaying,
+    currentTrack,
+    playlistLength,
     handlePlay,
     handlePause,
     handleForward,
@@ -24,13 +28,27 @@ const Player = (
   }: IProps
 ) => (
   <Container textAlign="center">
-    <Icon onClick={handleBackward} name="backward" size="huge" inverted={true} />
+    <Icon
+      inverted
+      size="huge"
+      name="backward"
+      onClick={handleBackward}
+      link={currentTrack !== 0}
+      disabled={currentTrack === 0}
+    />
     {isPlaying
-      ? <Icon onClick={handlePause} name="pause" size="massive" inverted={true} />
-      : <Icon onClick={handlePlay} name="play" size="massive" inverted={true} />
+      ? <Icon onClick={handlePause} name="pause" size="massive" inverted link />
+      : <Icon onClick={handlePlay} name="play" size="massive" inverted link />
     }
-    <Icon onClick={handleForward} name="forward" size="huge" inverted={true} />
-    <Header as="h1" inverted={true}>
+    <Icon
+      inverted
+      size="huge"
+      name="forward"
+      onClick={handleForward}
+      link={currentTrack !== playlistLength}
+      disabled={currentTrack === playlistLength}
+    />
+    <Header as="h1" inverted>
       {track.artist} - {track.title}
     </Header>
     <audio ref={audio} src={track.trackUrl} />
