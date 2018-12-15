@@ -3,7 +3,7 @@ import { Card, Container, List } from 'semantic-ui-react'
 
 import Player from 'src/components/Player/container';
 import { IPlaylist } from 'src/types';
-import Track from './Track/component';
+import Track from './Track/container';
 
 const Playlist = ({ tracks, title }: IPlaylist) => (
   <Container>
@@ -12,8 +12,8 @@ const Playlist = ({ tracks, title }: IPlaylist) => (
         <Player />
       </div>
       <List divided={true} relaxed={true} selection={true} verticalAlign="middle">
-        {tracks.map((track, index) => 
-          <Track 
+        {tracks.map((track, index) =>
+          <Track
             key={track.id}
             index={index}
             {...track}

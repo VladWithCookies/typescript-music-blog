@@ -34,6 +34,12 @@ const playerReducer: Reducer<IPlayerState> = (state = initialState, action) => {
         ...state,
         currentTrack: nextTrack >= tracklistLength ? state.currentTrack : nextTrack
       }
+    case types.SELECT:
+      return {
+        ...state,
+        isPlaying: true,
+        currentTrack: action.payload
+      }
     default:
       return state;
   }
