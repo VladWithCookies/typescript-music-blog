@@ -3,6 +3,7 @@ export interface ITrack {
   title: string;
   artist: string;
   coverUrl: string;
+  trackUrl: string;
 }
 
 export interface IPlaylist {

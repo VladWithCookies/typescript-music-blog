@@ -5,21 +5,17 @@ const playlists = [
     tracks: [
       {
         id: '1',
-        title: 'Test',
-        artist: 'Test',
+        title: 'Just a Sample',
+        artist: 'Chill Bump',
         coverUrl: 'https://picsum.photos/300/300',
+        trackUrl: 'tracks/Just a Sample.mp3'
       },
       {
         id: '2',
-        title: 'Test',
-        artist: 'Test',
+        title: 'Just a Sample 2',
+        artist: 'Chill Bump',
         coverUrl: 'https://picsum.photos/250/250',
-      },
-      {
-        id: '3',
-        title: 'Test',
-        artist: 'Test',
-        coverUrl: 'https://picsum.photos/350/350',
+        trackUrl: 'tracks/Just a Sample 2.mp3'
       }
     ]
   }
