@@ -10,7 +10,7 @@ const Playlist = ({ tracks, title, coverUrl }: IPlaylist) => (
     <Card fluid={true}>
       <div
         className="playlist-cover"
-        style={{ backgroundImage: `url('${coverUrl}')`, backgroundPosition: 'center' }}
+        style={{ backgroundImage: `url('${coverUrl}')` }}
       >
         <Player />
       </div>
