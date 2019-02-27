@@ -11,14 +11,26 @@ body {
   object-fit: cover;
 }
 
+.playlist-tracks {
+  margin-top: 220px;
+}
+
 .playlist-cover {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
   padding: 2rem 0 1rem 0;
   background-size: cover;
   background-position: center;
+  height: 220px;
 }
 
-.ui.avatar.image {
-  border-radius: 0 !important;
+.controls {
+  margin-top: 40px;
+}
+
+.controls-button {
+  margin-left: 30px !important;
 }
 
 .item {
@@ -28,4 +40,8 @@ body {
 /* semantic */
 .ui.divided.relaxed.list {
   margin: 0 !important;
+}
+
+.ui.avatar.image {
+  border-radius: 0 !important;
 }

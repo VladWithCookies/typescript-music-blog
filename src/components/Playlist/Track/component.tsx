@@ -5,11 +5,15 @@ import { ITrack } from 'src/types';
 
 export interface IProps extends ITrack {
   index: number;
+  currentTrack: number;
   handleSelectTrack: VoidFunction;
 }
 
-const Track = ({ title, artist, coverUrl, index, handleSelectTrack }: IProps) => (
-  <List.Item onClick={handleSelectTrack}>
+const Track = ({ title, artist, coverUrl, index, handleSelectTrack, currentTrack }: IProps) => (
+  <List.Item
+    onClick={handleSelectTrack}
+    active={currentTrack === index}
+  >
     <Image src={coverUrl} className="track-cover" />
     <List.Content>
       <List.Header as="h3">

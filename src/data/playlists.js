@@ -73,6 +73,20 @@ const playlists = [
         artist: 'Guts',
         coverUrl: 'covers/rest of my life.jpg',
         trackUrl: 'tracks/Rest of My Life.mp3'
+      },
+      {
+        id: '11',
+        title: 'Love of My Life',
+        artist: 'Hubert Tas',
+        coverUrl: 'covers/love of my life.jpg',
+        trackUrl: 'tracks/Love of My Life.mp3'
+      },
+      {
+        id: '12',
+        title: 'Daydream in Blue (Acoustic)',
+        artist: 'I Monster',
+        coverUrl: 'covers/daydream in blue.jpg',
+        trackUrl: 'tracks/Daydream in Blue (Acoustic).mp3'
       }
     ]
   }

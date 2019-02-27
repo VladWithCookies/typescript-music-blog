@@ -1,19 +1,19 @@
 import * as React from 'react';
-import { Card, Container, List } from 'semantic-ui-react'
+import { Card, List } from 'semantic-ui-react'
 
 import Player from 'src/components/Player/container';
 import { IPlaylist } from 'src/types';
 import Track from './Track/container';
 
 const Playlist = ({ tracks, title, coverUrl }: IPlaylist) => (
-  <Container>
-    <Card fluid={true}>
-      <div
-        className="playlist-cover"
-        style={{ backgroundImage: `url('${coverUrl}')` }}
-      >
-        <Player />
-      </div>
+  <Card fluid={true}>
+    <div
+      className="playlist-cover"
+      style={{ backgroundImage: `url('${coverUrl}')` }}
+    >
+      <Player />
+    </div>
+    <div className="playlist-tracks">
       <List divided={true} relaxed={true} selection={true} verticalAlign="middle">
         {tracks.map((track, index) =>
           <Track
@@ -23,8 +23,8 @@ const Playlist = ({ tracks, title, coverUrl }: IPlaylist) => (
           />
         )}
       </List>
-    </Card>
-  </Container>
+    </div>
+  </Card>
 );
 
 export default Playlist;
