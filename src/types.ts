@@ -7,9 +7,8 @@ export interface ITrack {
 }
 
 export interface IPlaylist {
-  year: number;
+  year: string;
   title: string;
   tracks: ITrack[];
   coverUrl: string;
 }
-

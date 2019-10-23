@@ -1,6 +1,6 @@
 const playlists = [
   {
-    year: 2018,
+    year: '2018',
     title: 'Need a title',
     coverUrl: 'playlist 2018.jpg',
     tracks: [
