@@ -28,7 +28,7 @@ const Player = (
     handleBackward,
   }: IProps
 ) => (
-  <Container textAlign="center" className="controls">
+  <Container textAlign="center" className="player">
     <Icon
       inverted
       size="huge"
@@ -38,8 +38,8 @@ const Player = (
       disabled={currentTrack === 0}
     />
     {isPlaying
-      ? <Icon onClick={handlePause} className="controls-button" name="pause" size="huge" inverted link />
-      : <Icon onClick={handlePlay}  className="controls-button" name="play" size="huge" inverted link />
+      ? <Icon onClick={handlePause} className="player__control" name="pause" size="huge" inverted link />
+      : <Icon onClick={handlePlay}  className="player__control" name="play" size="huge" inverted link />
     }
     <Icon
       inverted
@@ -48,7 +48,7 @@ const Player = (
       onClick={handleForward}
       link={currentTrack !== playlistLength}
       disabled={currentTrack === playlistLength}
-      className="controls-button"
+      className="player__control"
     />
     <Header as="h3" inverted>
       {track.artist} - {track.title}

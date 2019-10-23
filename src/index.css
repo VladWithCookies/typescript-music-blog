@@ -1,8 +1,8 @@
-/* custom */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #fafafa;
 }
 
 .track-cover {
@@ -11,37 +11,47 @@ body {
   object-fit: cover;
 }
 
-.playlist-tracks {
-  margin-top: 220px;
-}
-
 .playlist-cover {
   width: 100%;
-  z-index: 1;
-  position: fixed;
   padding: 2rem 0 1rem 0;
   background-size: cover;
   background-position: center;
   height: 220px;
 }
 
-.controls {
+.player {
   margin-top: 40px;
 }
 
-.controls-button {
-  margin-left: 30px !important;
+.player > .player__control {
+  margin-left: 30px;
 }
 
-.item {
-  padding: 0 !important;
+.archive {
+  padding-top: 2rem;
+  text-align: center;
 }
 
-/* semantic */
-.ui.divided.relaxed.list {
-  margin: 0 !important;
+.archive__header {
+  color: white;
+  width: fit-content;
+  background-color: black;
 }
 
-.ui.avatar.image {
-  border-radius: 0 !important;
+.ui.divided.selection.relaxed.middle.aligned.list > .item {
+  padding: 0;
+}
+
+.ui.fluid.card {
+  border-radius: 0;
+}
+
+.ui.fluid.card >:first-child {
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.grid > .column:not(.row) {
+    padding: 0 !important;
+  }
 }
