@@ -36,6 +36,18 @@ body {
   color: white;
   width: fit-content;
   background-color: black;
+  margin-bottom: 2rem;
+}
+
+.archive-item {
+  height: 200px;
+  width: 200px;
+}
+
+.ui.image.archive-item__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .ui.divided.selection.relaxed.middle.aligned.list > .item {
