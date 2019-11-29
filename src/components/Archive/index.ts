@@ -1,3 +1,1 @@
-import Archive from './component';
-
-export default Archive;
+export { default } from './component';

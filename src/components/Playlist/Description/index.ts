@@ -1,3 +1,1 @@
-import Description from './container'
-
-export default Description
+export { default } from './container';

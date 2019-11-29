@@ -1,3 +1,1 @@
-import ArchiveItem from './container'
-
-export default ArchiveItem
+export { default } from './container';

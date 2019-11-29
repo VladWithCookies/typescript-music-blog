@@ -7,9 +7,9 @@ import { selectTrack } from 'src/concepts/player/actions';
 import TrackComponent from './component';
 
 interface IProps extends ITrack {
-  index: number;
-  selectTrack: Function;
-  currentTrack: number;
+  index: number
+  selectTrack: Function
+  currentTrack: number
 }
 
 class Track extends React.Component<IProps> {

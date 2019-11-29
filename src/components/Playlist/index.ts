@@ -1,3 +1,1 @@
-import Playlist from './container';
-
-export default Playlist;
+export { default } from './container';

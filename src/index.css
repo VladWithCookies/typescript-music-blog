@@ -5,18 +5,35 @@ body {
   background-color: #fafafa;
 }
 
+.main-header {
+  color: white;
+  width: fit-content;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
 .track-cover {
   width: 80px;
   height: 80px;
   object-fit: cover;
 }
 
-.playlist-cover {
+.playlist {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+.playlist__cover {
   width: 100%;
-  padding: 2rem 0 1rem 0;
+  padding: 20px 0 10px 0;
   background-size: cover;
   background-position: center;
   height: 220px;
+}
+
+.playlist__tracks {
+  overflow-y: scroll;
 }
 
 .player {
@@ -24,19 +41,16 @@ body {
 }
 
 .player > .player__control {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .archive {
-  padding-top: 2rem;
+  padding-top: 20px;
   text-align: center;
 }
 
-.archive__header {
-  color: white;
-  width: fit-content;
-  background-color: black;
-  margin-bottom: 2rem;
+.archive__column {
+  min-width: 220px;
 }
 
 .archive-item {
@@ -54,8 +68,14 @@ body {
   padding: 0;
 }
 
-.ui.fluid.card, .ui.fluid.card >:first-child {
-  border-radius: 0;
+.ui.grid >.column:not(.row) {
+  padding-bottom: 0;
+}
+
+.ui.fluid.card,
+.ui.fluid.card >:first-child,
+.ui.fluid.card >:last-child  {
+  border-radius: 0 !important;
 }
 
 @media only screen and (max-width: 767px) {

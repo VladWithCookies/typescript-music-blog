@@ -6,7 +6,7 @@ import Playlist from './components/Playlist';
 import Archive from './components/Archive';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={Archive} />
       <Route exact path="/playlist/:year" component={Playlist} />

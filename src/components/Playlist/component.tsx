@@ -1,25 +1,23 @@
-import * as React from 'react'
-import { Grid, Card, List, Sticky } from 'semantic-ui-react'
+import * as React from 'react';
+import { Grid, Card, List } from 'semantic-ui-react';
 
-import Player from 'src/components/Player/container'
-import { IPlaylist } from 'src/types'
-import Track from './Track/container'
-import Description from './Description'
+import Player from 'src/components/Player';
+import { IPlaylist } from 'src/types';
+import Track from './Track';
+import Description from './Description';
 
 const Playlist = ({ tracks, coverUrl, description }: IPlaylist) => (
   <Grid centered stackable columns={2}>
     <Grid.Column>
-      <Card fluid={true}>
-        <Sticky>
-          <div
-            className="playlist-cover"
-            style={{ backgroundImage: `url('${coverUrl}')` }}
-          >
-            <Player />
-          </div>
-        </Sticky>
+      <Card fluid className='playlist'>
+        <div
+          className="playlist__cover"
+          style={{ backgroundImage: `url('../${coverUrl}')` }}
+        >
+          <Player />
+        </div>
         <Description description={description} />
-        <div>
+        <div className="playlist__tracks">
           <List divided relaxed selection verticalAlign="middle">
             {tracks.map((track, index) =>
               <Track

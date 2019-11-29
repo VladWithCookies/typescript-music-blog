@@ -4,17 +4,24 @@ import { Image, List } from 'semantic-ui-react';
 import { ITrack } from 'src/types';
 
 export interface IProps extends ITrack {
-  index: number;
-  currentTrack: number;
-  handleSelectTrack: VoidFunction;
+  index: number
+  currentTrack: number
+  handleSelectTrack: VoidFunction
 }
 
-const Track = ({ title, artist, coverUrl, index, handleSelectTrack, currentTrack }: IProps) => (
+const Track = ({
+  index,
+  title,
+  artist,
+  coverUrl,
+  currentTrack,
+  handleSelectTrack,
+}: IProps) => (
   <List.Item
     onClick={handleSelectTrack}
     active={currentTrack === index}
   >
-    <Image src={coverUrl} className="track-cover" />
+    <Image src={`../${coverUrl}`} className="track-cover" />
     <List.Content>
       <List.Header as="h3">
         {index + 1}. {title}

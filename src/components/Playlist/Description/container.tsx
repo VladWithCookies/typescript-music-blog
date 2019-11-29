@@ -1,6 +1,6 @@
-import * as React from 'react'
+import * as React from 'react';
 
-import DescriptionComponent from './component'
+import DescriptionComponent from './component';
 
 interface IProps {
   description: string
@@ -16,7 +16,7 @@ class Description extends React.Component<IProps, IState> {
   }
 
   handleClick = () => {
-    this.setState({ active: !this.state.active })
+    this.setState((state) => ({ active: !state.active }))
   }
 
   render() {
@@ -29,8 +29,8 @@ class Description extends React.Component<IProps, IState> {
         description={description}
         onClick={this.handleClick}
       />
-    )
+    );
   }
 }
 
-export default Description
+export default Description;

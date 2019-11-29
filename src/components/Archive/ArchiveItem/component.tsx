@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { Link } from 'react-router-dom'
-import { Dimmer, Image } from 'semantic-ui-react'
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { Dimmer, Image } from 'semantic-ui-react';
 
 interface IProps {
   year: string
@@ -29,6 +29,6 @@ const ArchiveItem: React.FC<IProps> = ({
     </Link>
     <Dimmer content={year} active={active} />
   </Dimmer.Dimmable>
-)
+);
 
-export default ArchiveItem
+export default ArchiveItem;

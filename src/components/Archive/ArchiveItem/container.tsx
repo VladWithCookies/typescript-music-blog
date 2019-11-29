@@ -1,6 +1,6 @@
-import * as React from 'react'
+import * as React from 'react';
 
-import ArchiveItemComponent from './component'
+import ArchiveItemComponent from './component';
 
 interface IProps {
   year: string
@@ -39,4 +39,4 @@ class ArchiveItem extends React.Component<IProps, IState> {
   }
 }
 
-export default ArchiveItem
+export default ArchiveItem;
