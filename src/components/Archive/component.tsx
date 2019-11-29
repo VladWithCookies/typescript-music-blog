@@ -12,8 +12,8 @@ const Archive = () => (
     <p>
       The project was created at March, 2018. The main idea is to create playlists from 12 handpicked songs each year.
       I pick one song each mounth starting from March and ending with February. Each song is my favorite songs of the mounth.
-      This song can be a fresh release of the mounth or hidden by decades treasure which was a music discovery of the mounth for me.
-      Mostly playlist contains songs in such genres as Downtempo, Hip-Hop, House but not only.
+      This song can be a fresh release or a music discovery of the mounth for me.
+      Mostly playlist contains songs in such genres as Downtempo, Hip-Hop & House, but not only.
     </p>
     <h2 className="archive__header">
       Archive
