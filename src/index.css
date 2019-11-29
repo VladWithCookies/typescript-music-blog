@@ -54,11 +54,7 @@ body {
   padding: 0;
 }
 
-.ui.fluid.card {
-  border-radius: 0;
-}
-
-.ui.fluid.card >:first-child {
+.ui.fluid.card, .ui.fluid.card >:first-child {
   border-radius: 0;
 }
 

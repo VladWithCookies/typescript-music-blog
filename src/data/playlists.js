@@ -3,6 +3,7 @@ const playlists = [
     year: '2018',
     title: 'Need a title',
     coverUrl: 'playlist 2018.jpg',
+    description: 'This year i finally realised that i like Hip-Hop. The main music discoveries of the year were Hubert Tas, Guts & The Geek x VRV. My favourite album of the year is Roots by Hubert Tas. Roots sounds as ideal mix of Jazz & Hip-Hop music.',
     tracks: [
       {
         id: '1',

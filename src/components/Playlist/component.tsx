@@ -1,11 +1,12 @@
-import * as React from 'react';
+import * as React from 'react'
 import { Grid, Card, List, Sticky } from 'semantic-ui-react'
 
-import Player from 'src/components/Player/container';
-import { IPlaylist } from 'src/types';
-import Track from './Track/container';
+import Player from 'src/components/Player/container'
+import { IPlaylist } from 'src/types'
+import Track from './Track/container'
+import Description from './Description'
 
-const Playlist = ({ tracks, coverUrl }: IPlaylist) => (
+const Playlist = ({ tracks, coverUrl, description }: IPlaylist) => (
   <Grid centered stackable columns={2}>
     <Grid.Column>
       <Card fluid={true}>
@@ -17,8 +18,9 @@ const Playlist = ({ tracks, coverUrl }: IPlaylist) => (
             <Player />
           </div>
         </Sticky>
+        <Description description={description} />
         <div>
-          <List divided={true} relaxed={true} selection={true} verticalAlign="middle">
+          <List divided relaxed selection verticalAlign="middle">
             {tracks.map((track, index) =>
               <Track
                 key={track.id}
