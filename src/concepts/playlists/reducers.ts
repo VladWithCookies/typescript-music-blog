@@ -10,4 +10,3 @@ export interface IPlaylistsState {
 const playlistsReducer: Reducer<IPlaylistsState> = (state = initialState) => state;
 
 export default playlistsReducer;
-

@@ -1,30 +1,36 @@
 import * as React from 'react';
-import { Card, List } from 'semantic-ui-react'
+import { Grid, Card, List } from 'semantic-ui-react';
 
-import Player from 'src/components/Player/container';
+import Player from 'src/components/Player';
 import { IPlaylist } from 'src/types';
-import Track from './Track/container';
+import Track from './Track';
+import Description from './Description';
 
-const Playlist = ({ tracks, title, coverUrl }: IPlaylist) => (
-  <Card fluid={true}>
-    <div
-      className="playlist-cover"
-      style={{ backgroundImage: `url('${coverUrl}')` }}
-    >
-      <Player />
-    </div>
-    <div className="playlist-tracks">
-      <List divided={true} relaxed={true} selection={true} verticalAlign="middle">
-        {tracks.map((track, index) =>
-          <Track
-            key={track.id}
-            index={index}
-            {...track}
-          />
-        )}
-      </List>
-    </div>
-  </Card>
+const Playlist = ({ tracks, coverUrl, description }: IPlaylist) => (
+  <Grid centered stackable columns={2}>
+    <Grid.Column>
+      <Card fluid className='playlist'>
+        <div
+          className="playlist__cover"
+          style={{ backgroundImage: `url('../${coverUrl}')` }}
+        >
+          <Player />
+        </div>
+        <Description description={description} />
+        <div className="playlist__tracks">
+          <List divided relaxed selection verticalAlign="middle">
+            {tracks.map((track, index) =>
+              <Track
+                key={track.id}
+                index={index}
+                {...track}
+              />
+            )}
+          </List>
+        </div>
+      </Card>
+    </Grid.Column>
+  </Grid>
 );
 
 export default Playlist;

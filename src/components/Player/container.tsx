@@ -1,24 +1,15 @@
 import * as React from 'react';
-import { isEqual } from 'lodash';
+import { isEqual, flow } from 'lodash';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 
 import { play, pause, backward, forward } from 'src/concepts/player/actions';
+import { cuurentTrackSelector } from 'src/concepts/player/selectors';
+import { playlistLengthSelector } from 'src/concepts/playlists/selectors';
 import { IApplicationState } from 'src/store';
-import { ITrack } from '../../types';
 import PlayerComponent from './component';
 
-interface IProps {
-  track: ITrack;
-  play: Function;
-  pause: Function;
-  forward: Function;
-  backward: Function;
-  isPlaying: Boolean;
-  currentTrack: number;
-  playlistLength: number;
-}
-
-class Player extends React.Component<IProps> {
+class Player extends React.Component<any> {
   private audio = React.createRef<HTMLAudioElement>();
 
   componentDidMount() {
@@ -31,7 +22,7 @@ class Player extends React.Component<IProps> {
     }
   }
 
-  componentDidUpdate(nextProps: IProps) {
+  componentDidUpdate(nextProps: any) {
     const node = this.audio.current;
 
     if (node) {
@@ -81,11 +72,11 @@ class Player extends React.Component<IProps> {
   }
 }
 
-const mapStateToProps = (state: IApplicationState) => ({
-  track: state.playlists[0].tracks[state.player.currentTrack], //FIXME
+const mapStateToProps = (state: IApplicationState, props: any) => ({
   isPlaying: state.player.isPlaying,
   currentTrack: state.player.currentTrack,
-  playlistLength: state.playlists[0].tracks.length - 1, //FIXME
+  track: cuurentTrackSelector(state, props.match.params.year),
+  playlistLength: playlistLengthSelector(state, props.match.params.year),
 });
 
 const mapDispatchToProps = {
@@ -95,4 +86,7 @@ const mapDispatchToProps = {
   backward,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Player);
+export default flow(
+  connect(mapStateToProps, mapDispatchToProps),
+  withRouter,
+)(Player);

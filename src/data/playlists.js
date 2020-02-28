@@ -1,8 +1,9 @@
 const playlists = [
   {
-    year: 2018,
-    title: 'Need a title',
+    year: '2018',
+    title: '',
     coverUrl: 'playlist 2018.jpg',
+    description: 'This year i finally realised that i like Hip-Hop. The main music discoveries of the year were Hubert Tas, Guts & The Geek x VRV. My favourite album of the year is Mechanism by Hubert Tas. Sounds as perfect mix of Jazz & Hip-Hop music.',
     tracks: [
       {
         id: '1',
@@ -89,6 +90,98 @@ const playlists = [
         trackUrl: 'tracks/Daydream in Blue (Acoustic).mp3'
       }
     ]
+  },
+  {
+    year: '2019',
+    title: 'Need a title',
+    coverUrl: 'playlist 2019.jpg',
+    description: '',
+    tracks: [
+      {
+        id: '1',
+        title: 'Skies Turn Blue',
+        artist: 'Little People, Tif Lamson',
+        coverUrl: 'covers/skies turn blue.jpg',
+        trackUrl: 'tracks/Skies Turn Blue.mp3',
+      },
+      {
+        id: '2',
+        title: 'Tear the Roots',
+        artist: 'Kaleida',
+        coverUrl: 'covers/tear the roots.jpeg',
+        trackUrl: 'tracks/Tear the Roots.mp3',
+      },
+      {
+        id: '3',
+        title: 'La Frontera',
+        artist: 'Lagartijeando, Minuk',
+        coverUrl: 'covers/la frontera.jpeg',
+        trackUrl: 'tracks/La Frontera.mp3',
+      },
+      {
+        id: '4',
+        title: 'Ivory Tongue',
+        artist: 'Alya Nereo',
+        coverUrl: 'covers/ivory tongue.jpg',
+        trackUrl: 'tracks/Ivory Tongue.mp3',
+      },
+      {
+        id: '5',
+        title: 'Into The Woods',
+        artist: 'Tycho',
+        coverUrl: 'covers/into the woods.jpg',
+        trackUrl: 'tracks/Into The Woods.mp3',
+      },
+      {
+        id: '6',
+        title: 'Life\'s a Trip',
+        artist: 'Def3, Late Night Radio, Clark Smith',
+        coverUrl: 'covers/lifes trip.jpg',
+        trackUrl: 'tracks/Life\'s a Trip.mp3',
+      },
+      {
+        id: '7',
+        title: 'Pad Fukkk',
+        artist: 'Thriftworks',
+        coverUrl: 'covers/pad fukkk.jpg',
+        trackUrl: 'tracks/Pad FUKKK.mp3',
+      },
+      {
+        id: '8',
+        title: 'Opal Waltz',
+        artist: 'Supernaive',
+        coverUrl: 'covers/opal waltz.jpg',
+        trackUrl: 'tracks/Opal Waltz.mp3',
+      },
+      {
+        id: '9',
+        title: 'Deviate',
+        artist: 'Tora',
+        coverUrl: 'covers/deviate.jpg',
+        trackUrl: 'tracks/Deviate.mp3',
+      },
+      {
+        id: '10',
+        title: 'Contradictions Maze',
+        artist: 'Oddisee, Maimouna Youselff',
+        coverUrl: 'covers/contradictions maze.jpg',
+        trackUrl: 'tracks/Contradictions Maze.mp3',
+      },
+      {
+        id: '11',
+        title: 'For the True',
+        artist: 'Nym',
+        coverUrl: 'covers/for the true.jpg',
+        trackUrl: 'tracks/For The True.mp3',
+      },
+      {
+        id: '12',
+        title: 'Pull the Catch',
+        artist: 'DJ Vadim, Fat Freddy\'s Drop',
+        coverUrl: 'covers/pull the catch.jpg',
+        trackUrl: 'tracks/Pull the Catch.mp3',
+      },
+    ],
   }
 ];
 
