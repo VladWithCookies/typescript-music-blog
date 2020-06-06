@@ -95,7 +95,7 @@ const playlists = [
     year: '2019',
     title: 'Need a title',
     coverUrl: 'playlist 2019.jpg',
-    description: '',
+    description: 'Nothing new with my music tastes except of fall for dub music (thanks to DJ Vadim). The main music discoveries were DJ Vadim, Thriftworks and Tora. The album of the year is Countermagic by Nym.',
     tracks: [
       {
         id: '1',
