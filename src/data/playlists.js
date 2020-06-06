@@ -3,7 +3,7 @@ const playlists = [
     year: '2018',
     title: '',
     coverUrl: 'playlist 2018.jpg',
-    description: 'This year i finally realised that i like Hip-Hop. The main music discoveries of the year were Hubert Tas, Guts & The Geek x VRV. My favourite album of the year is Mechanism by Hubert Tas. Sounds as perfect mix of Jazz & Hip-Hop music.',
+    description: 'This year i finally realized that i like Hip-Hop. The main music discoveries of the year were Hubert Tas, Guts & The Geek x VRV. My favorite album of the year is Mechanism by Hubert Tas. Sounds as perfect mix of Jazz & Hip-Hop music.',
     tracks: [
       {
         id: '1',
@@ -95,7 +95,7 @@ const playlists = [
     year: '2019',
     title: 'Need a title',
     coverUrl: 'playlist 2019.jpg',
-    description: 'Nothing new with my music tastes except of fall for dub music (thanks to DJ Vadim). The main music discoveries were DJ Vadim, Thriftworks and Tora. The album of the year is Countermagic by Nym.',
+    description: 'Nothing new with my music tastes except of fall for dub music (thanks to DJ Vadim). The main music discoveries were DJ Vadim & Thriftworks. The album of the year is Countermagic by Nym.',
     tracks: [
       {
         id: '1',
