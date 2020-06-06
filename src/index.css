@@ -79,6 +79,10 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .ui.grid {
+    margin: 0;
+  }
+
   .ui.stackable.grid > .column:not(.row) {
     padding: 0 !important;
   }
