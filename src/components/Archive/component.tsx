@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Grid } from 'semantic-ui-react';
 
-import playlists from 'src/data/playlists.js';
+import playlists from '../../data/playlists';
 import ArchiveItem from './ArchiveItem';
 
 const Archive = () => (

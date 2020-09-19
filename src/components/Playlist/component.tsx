@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Grid, Card, List } from 'semantic-ui-react';
 
-import Player from 'src/components/Player';
 import { IPlaylist } from 'src/types';
+import Player from './Player';
 import Track from './Track';
 import Description from './Description';
 

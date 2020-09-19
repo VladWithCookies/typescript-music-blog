@@ -18,6 +18,7 @@ const ArchiveItem: React.FC<IProps> = ({
   onMouseLeave,
 }) => (
   <Dimmer.Dimmable
+    data-testid="archive-item"
     src={coverUrl}
     dimmed={active}
     className='archive-item'
