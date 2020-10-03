@@ -15,11 +15,15 @@ const Description: React.FC<IProps> = ({ active, description, onClick }) => (
         index={0}
         active={active}
         onClick={onClick}
+        data-testid="description-title"
       >
         <Icon name='dropdown' />
         Playlist Description
       </Accordion.Title>
-      <Accordion.Content active={active}>
+      <Accordion.Content
+        active={active}
+        data-testid="description"
+      >
         <Segment basic color='black' inverted padded={false}>
           {description}
         </Segment>

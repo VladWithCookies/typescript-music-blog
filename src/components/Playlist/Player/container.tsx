@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { isEqual, flow } from 'lodash';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
+import { isEqual, flowRight } from 'lodash';
 
 import { play, pause, backward, forward } from 'src/concepts/player/actions';
-import { cuurentTrackSelector } from 'src/concepts/player/selectors';
+import { currentTrackSelector } from 'src/concepts/player/selectors';
 import { playlistLengthSelector } from 'src/concepts/playlists/selectors';
 import { IApplicationState } from 'src/store';
 import PlayerComponent from './component';
@@ -75,7 +75,7 @@ class Player extends React.Component<any> {
 const mapStateToProps = (state: IApplicationState, props: any) => ({
   isPlaying: state.player.isPlaying,
   currentTrack: state.player.currentTrack,
-  track: cuurentTrackSelector(state, props.match.params.year),
+  track: currentTrackSelector(state, props.match.params.year),
   playlistLength: playlistLengthSelector(state, props.match.params.year),
 });
 
@@ -86,7 +86,7 @@ const mapDispatchToProps = {
   backward,
 };
 
-export default flow(
-  connect(mapStateToProps, mapDispatchToProps),
+export default flowRight(
   withRouter,
+  connect(mapStateToProps, mapDispatchToProps),
 )(Player);

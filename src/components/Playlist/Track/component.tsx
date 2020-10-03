@@ -18,6 +18,7 @@ const Track = ({
   handleSelectTrack,
 }: IProps) => (
   <List.Item
+    data-testid="track"
     onClick={handleSelectTrack}
     active={currentTrack === index}
   >

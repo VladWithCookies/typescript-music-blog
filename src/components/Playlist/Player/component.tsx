@@ -21,12 +21,30 @@ const Player = (
       name="backward"
       onClick={handleBackward}
       link={currentTrack !== 0}
+      data-testid="backward-button"
       disabled={currentTrack === 0}
     />
-    {isPlaying
-      ? <Icon onClick={handlePause} className="player__control" name="pause" size="huge" inverted link />
-      : <Icon onClick={handlePlay} className="player__control" name="play" size="huge" inverted link />
-    }
+    {isPlaying ? (
+      <Icon
+        link
+        inverted
+        size="huge"
+        name="pause"
+        onClick={handlePause}
+        className="player__control"
+        data-testid="pause-button"
+      />
+    ) : (
+      <Icon
+        link
+        inverted
+        name="play"
+        size="huge"
+        onClick={handlePlay}
+        className="player__control"
+        data-testid="play-button"
+      />
+    )}
     <Icon
       inverted
       size="huge"
@@ -35,8 +53,13 @@ const Player = (
       link={currentTrack !== playlistLength - 1}
       disabled={currentTrack === playlistLength - 1}
       className="player__control"
+      data-testid="forward-button"
     />
-    <Header as="h3" inverted>
+    <Header
+      as="h3"
+      inverted
+      data-testid="track-title"
+    >
       {track.artist} - {track.title}
     </Header>
     <audio ref={audio} src={`../${track.trackUrl}`} />

@@ -1,0 +1,415 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Playlist component matches snapshot 1`] = `
+<div>
+  <div
+    class="ui centered stackable two column grid"
+  >
+    <div
+      class="column"
+    >
+      <div
+        class="ui fluid card playlist"
+      >
+        <div
+          class="playlist__cover"
+        >
+          <div
+            class="ui center aligned container player"
+          >
+            <i
+              data-testid="backward-button"
+              aria-hidden="true"
+              class="backward huge disabled inverted icon"
+            />
+            <i
+              data-testid="play-button"
+              aria-hidden="true"
+              class="play huge inverted link icon player__control"
+            />
+            <i
+              data-testid="forward-button"
+              aria-hidden="true"
+              class="forward huge inverted link icon player__control"
+            />
+            <h3
+              data-testid="track-title"
+              class="ui inverted header"
+            >
+              TOKiMONSTA
+              - 
+              Rouge
+            </h3>
+            <audio
+              src="../tracks/Rouge.mp3"
+            />
+          </div>
+        </div>
+        <div
+          style="margin: 0px;"
+          class="ui black basic inverted segment"
+        >
+          <div
+            class="accordion ui"
+          >
+            <div
+              style="color: white;"
+              data-testid="description-title"
+              class="title"
+            >
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              Playlist Description
+            </div>
+            <div
+              data-testid="description"
+              class="content"
+            >
+              <div
+                class="ui black basic inverted segment"
+              >
+                This year i finally realized that i like Hip-Hop. The main music discoveries of the year were Hubert Tas, Guts & The Geek x VRV. My favorite album of the year is Mechanism by Hubert Tas. Sounds as perfect mix of Jazz & Hip-Hop music.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="playlist__tracks"
+        >
+          <div
+            role="list"
+            class="ui divided selection relaxed middle aligned list"
+          >
+            <div
+              role="listitem"
+              class="active item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/rouge.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  1
+                  . 
+                  Rouge
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  TOKiMONSTA
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/mas que nada.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  2
+                  . 
+                  Mas Que Nada
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  Sergio Mendes & Brasil '66
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/we will rise again.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  3
+                  . 
+                  We Will Rise Again
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  Hammock
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/la 97.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  4
+                  . 
+                  LA 97
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  The Geek x VRV
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/dimes for nickels.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  5
+                  . 
+                  Dimes For Nickels
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  9 Theory
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/television.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  6
+                  . 
+                  Television
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  Oceanvs Orientalis, Idil Mese
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/sintra.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  7
+                  . 
+                  Sintra
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  Flume
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/let the clean water.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  8
+                  . 
+                  Let The Clean Water
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  The Human Experience
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/home sweet home.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  9
+                  . 
+                  Home Sweet Home
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  Chill Bump
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/rest of my life.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  10
+                  . 
+                  Rest of My Life
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  Guts
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/love of my life.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  11
+                  . 
+                  Love of My Life
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  Hubert Tas
+                </div>
+              </div>
+            </div>
+            <div
+              role="listitem"
+              class="item"
+              data-testid="track"
+            >
+              <img
+                src="../covers/daydream in blue.jpg"
+                class="ui image track-cover"
+              />
+              <div
+                class="content"
+              >
+                <h3
+                  class="header"
+                >
+                  12
+                  . 
+                  Daydream in Blue (Acoustic)
+                </h3>
+                <div
+                  class="description"
+                >
+                  by 
+                  I Monster
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
 import { Reducer } from 'redux';
 
-import playlists from 'src/data/playlists.js';
+import playlists from 'src/data/playlists';
 import * as types from './types';
 
 export interface IPlayerState {

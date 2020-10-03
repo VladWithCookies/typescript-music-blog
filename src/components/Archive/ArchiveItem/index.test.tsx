@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-import { render, fireEvent, screen } from '../../../lib/testUtils';
+import { render, fireEvent, screen } from 'src/lib/testUtils';
 import ArchiveItem from '.';
 
 describe('ArchiveItem component', () => {
@@ -10,7 +8,7 @@ describe('ArchiveItem component', () => {
   };
 
   beforeEach(() => {
-    render(<ArchiveItem {...props} />);
+    render(ArchiveItem, { props });
   });
 
   it('becomes active', () => {

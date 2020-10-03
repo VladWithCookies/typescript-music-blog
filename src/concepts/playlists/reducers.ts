@@ -1,7 +1,7 @@
 import { Reducer } from 'redux';
 
 import { IPlaylist } from 'src/types';
-import initialState from 'src/data/playlists.js';
+import initialState from 'src/data/playlists';
 
 export interface IPlaylistsState {
   [index: number]: IPlaylist;

@@ -1,10 +1,8 @@
-import * as React from 'react';
-
-import { render } from '../../lib/testUtils';
+import { render } from 'src/lib/testUtils';
 import Archive from '.';
 
 describe('Archive component', () => {
-  const { container } = render(<Archive />);
+  const { container } = render(Archive);
 
   it('matches snapshot', () => {
     expect(container).toMatchSnapshot();

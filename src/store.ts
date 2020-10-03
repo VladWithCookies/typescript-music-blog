@@ -5,7 +5,7 @@ import reducers, {
   IPlaylistsState,
 } from './concepts';
 
-const rootReducer = combineReducers(reducers);
+export const rootReducer = combineReducers(reducers);
 
 export interface IApplicationState {
   player: IPlayerState;
